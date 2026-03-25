@@ -7,7 +7,9 @@ const Details = ({ currentBook }) => {
       <div className="mb-6">
         <Link
           to="/"
-          className="inline-flex items-center rounded-md border px-3 py-2 text-sm font-medium text-gray-700 hover:bg-black hover:text-white transition"
+          className="inline-flex items-center rounded-md 
+          border px-3 py-2 text-sm font-medium text-gray-700 
+          hover:bg-black hover:text-white transition"
         >
           Back
         </Link>
@@ -15,7 +17,8 @@ const Details = ({ currentBook }) => {
 
       <section className="border rounded-2xl bg-white shadow-sm overflow-hidden">
         <div className="grid md:grid-cols-2 gap-0">
-          <div className="bg-gray-50 border-b md:border-b-0 md:border-r p-6 flex items-center justify-center">
+          <div className="bg-gray-50 border-b md:border-b-0 
+          md:border-r p-6 flex items-center justify-center">
             <img
               src={currentBook.cover}
               alt={currentBook.title}
@@ -50,7 +53,8 @@ const Details = ({ currentBook }) => {
             <div className="mt-8">
               <Link
                 to={`/edit/${currentBook.id}`}
-                className="inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
+                className="inline-flex items-center rounded-md 
+                bg-black px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
               >
                 Edit Book
               </Link>

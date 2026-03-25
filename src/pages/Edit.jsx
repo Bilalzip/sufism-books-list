@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Edit = ({ currentBook, updateBook }) => {
@@ -26,7 +25,8 @@ const Edit = ({ currentBook, updateBook }) => {
 
         <Link
           to="/"
-          className="inline-flex items-center rounded-md border px-3 py-2 text-sm font-medium text-gray-700 hover:bg-black hover:text-white transition"
+          className="inline-flex items-center rounded-md 
+          border px-3 py-2 text-sm font-medium text-gray-700 hover:bg-black hover:text-white transition"
         >
           Back
         </Link>
@@ -52,7 +52,8 @@ const Edit = ({ currentBook, updateBook }) => {
               name="title"
               value={currentBook.title}
               onChange={handleChange}
-              className="w-full rounded-xl border bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+              className="w-full rounded-xl border 
+              bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
             />
           </div>
 
@@ -64,7 +65,8 @@ const Edit = ({ currentBook, updateBook }) => {
               name="author"
               value={currentBook.author}
               onChange={handleChange}
-              className="w-full rounded-xl border bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+              className="w-full rounded-xl border 
+              bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
             />
           </div>
 
@@ -77,7 +79,8 @@ const Edit = ({ currentBook, updateBook }) => {
               type="number"
               value={currentBook.year}
               onChange={handleChange}
-              className="w-full rounded-xl border bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+              className="w-full rounded-xl border 
+              bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
             />
           </div>
 
@@ -89,21 +92,24 @@ const Edit = ({ currentBook, updateBook }) => {
               name="cover"
               value={currentBook.cover}
               onChange={handleChange}
-              className="w-full rounded-xl border bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+              className="w-full rounded-xl border 
+              bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
             />
           </div>
 
           <div className="pt-2 flex items-center gap-3">
             <Link
               to="/"
-              className="inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
+              className="inline-flex items-center 
+              rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
             >
               Save & Go Back
             </Link>
 
             <Link
               to={`/details/${currentBook.id}`}
-              className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition"
+              className="inline-flex items-center 
+              rounded-md border px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition"
             >
               View Details
             </Link>

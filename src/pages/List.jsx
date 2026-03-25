@@ -3,7 +3,7 @@ import ListItem from '../components/ListItem'
 
 const List = ({ books, changeBook }) => {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-10">
+    <div className="max-w-5xl mx-auto px-6 py-10">
       <h2 className="text-2xl font-semibold tracking-tight mb-6 text-black">
         Book List
       </h2>
@@ -27,7 +27,7 @@ const List = ({ books, changeBook }) => {
           </tbody>
         </table>
       </div>
-    </main>
+    </div>
   )
 }
 
